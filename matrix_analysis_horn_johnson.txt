@@ -1,0 +1,63 @@
+Horn and Johnson (Second Edition)
+
+1.0P1, define f(x) = x^T A x$, f is continuous and x^T x = 1 is comapact. Therefore, there is a solution to the Lagrangian being zero where the Lagrangian is 2(Ax - ex) = 0. Therefore, Ax = ex, for an eigenvalue. Every real symmetric matrix has at least one real eigenvalue.
+
+1.0P2 The maximum of the set is max(x^T Ax). It is equal to max(e x^T x) by exercise 1.0P1, and this is equal to max(e) by assumption of x^T x = 1.
+
+Exercise: each eigenvalue d_i is associated with e_i if you consider it as a dot product.
+
+Exercise: Suppose x is an eigenvector associated ith an eigenvalue e, by definition Ax = ex, then pick nonscalar multiple k such that A/k = e(kx). Note that we need the hypothesis that k is nonzero for A/k to work. Therefore, any nonzero scalar multiple of x is an eigenvector kx.
+
+Exercise: suppose ax = ex, taking conjugates we have conj(a) conj(x) = conj(e) conj(x) therefore the resolvent / spectrum of A is preserved under conjugation. If A is in the matrix ring over a field of the reals, and e is an eigenvalue in the spectrum, since a diagonalisation is possible over the field of the reals, the conjugate of e is in the spectrum of A as well.
+
+Exercise: eigenvector is [1 1].
+
+Exercise: use the fact that eI = n dot e and IX = 0 where X is the column vector of all matrices x_i.
+
+Exercise: compute A 4I = J3, using preceding exercise, e = 1 + 3 or e = 1 + 0, giving eigenvalues of 1 and 4.
+
+Exercise: the spectrum of A^2 consistss of only the element 1. 
+
+Exercise: A^2 is the matrix [0 1; 0 1], the bottom is 0 0, so only scalar multiples of eigenvector e1 with eigenvalue 0. The only eigenvalue in the spectrum of A is 0.
+
+1.1P1, If zero is not in the spectrum of A or A is nonsingular, then A is not nilpotent, therefore A has an inverse, and A^{-1} x = e^{-1} x.
+
+1.1P2, consider (A - I)x = 0. The sum of entries of each row of the matrix A is equal to the coefficients of the characteristic polynomial by virtue of 1^N = 1 as a mtrix.
+
+1.1P3. Consider Au + i(av) = eu + iev. u and v, are real, and e is the real eigenvalue associated with u. The eigenvectors u and v need not both eigenvectors of A since A can be purely imaginary or purely real. The matrix A can have a real eigenvector associated with an eigenvalue that is not real, consider case of A = ie v, v real, ie is not real.
+
+1.1P4. Stuck.
+
+1.1P5 Consider ex^n = 0, so e is 0 for nonzero eigenvector or case where A(A - I) = 0, A = I so eigenvalues are 1. A^2 = A, and A^2 A^{-1} = I, A = I and is nonsingular, it is idempotent since the identity is unique. In all other cases, 0 must be an eigenvalue so it is singular.
+
+1.1P6, nilpotent means A^n = 0x = 0, so all eigenvalues are 0, A^2 = A then A^{2n + 1} = A^2n A^1 = 0 therefore this means 0 is the only idempotent nilpotent matrix.
+
+1.1P7. The complex conjugate of eigenvalues is equal to the eigenvalue itself for a Hermitian matrix, therefore all eigenvalues must be real.
+
+1.1P8 Consider case where e^2 + 1 = 0, e is real eigenvalue.
+
+1.1P9 Construct (A - eI) x = 0, this gives purely complex eigenvalues +- i.
+
+1.1P10 This is an example of a linear operator (right shift operator), and motivates the definition of the resolvent. See any book on functional analysis.
+
+1.1P11 Stuck. Need to write up properly.
+
+1.1P12 Stuck.
+
+1.1P13 Consider (adj A) Ax = A(adj A) x = A(adj A x) = ex.
+
+Exercise (page 50, 1): Multiply both sides by -1 to get the same roots. Alternating sign convention holds for powers of x.
+
+Exercise (page 50, 2): explicitly compute t^2 - (sum of roots) t + (product of roots) then define trace as sum of roots, determinant as product of roots. Generalises for arbirary roots, the eigenvalues are solved by the quadratic formula on the cahracteristic equations.
+
+Exercise (page 51): consider determinant (tI - M), all entries t are real, real pair of roots have same multiplicity. One can decompose (x - e)(x + conj(e)) for reall pairs of roots so the conjugates are also an eigenpair.
+
+Exercise (page 52): by definition of the spectral radius with max of the modulus, so it has all limit points.
+
+Exercise (page 52): note that A = eI can't be such tthat e = 0, otherwise A = 0.
+
+Exercise (page 52): suppose the resolvent of A is not finite, i.e. at most n, then the disk is not compact. WLOG suppose disc is compact, thern there exists an infinitely descending of eigenvlues toward zero. The other case is that the resolvent is empty, which is vacous where A is 0.
+
+Exercise (page 52): the product of diagonals gives the determinant of tI - A. Consider the Laplace expansion of those matrices. Does not matter if T is lower triangular or diagonal, as long as a diagonalisation exists this is the case.
+
+Exercise (page 52): this can be constructed using Laplace expansion of determinants for A_11 all the way to A-_kk, block matrices of single entries are merely a special case. This is hinting at the Jordan block decomposition.
