@@ -1,0 +1,1 @@
+Proof of existence of stationary distribution: apply Brouwer's fixed point theorem, turn representations of transition matrices into continuous maps and domain of states into a compact topological space endowed with suitable topology on intervals. The stationary point corresponds to the stationary distribution.
